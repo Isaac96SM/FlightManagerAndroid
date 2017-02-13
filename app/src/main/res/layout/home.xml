@@ -10,45 +10,43 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.isaac.flightmanager.HomeActivity">
 
-    <TextView
-        android:text="Customer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView2" />
-
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerCustomer"
         android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/spinnerCustomer"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonBuy" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerForTo"
         android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/buttonBuy" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:id="@+id/spinnerSeat"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:text="Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Departure"
+        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/spinnerForTo"
-        android:layout_alignStart="@+id/textView2" />
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/spinnerForTo" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -56,18 +54,19 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
+        android:background="#494949"
         android:id="@+id/editTextDeparture"
         android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/spinnerCustomer" />
 
     <TextView
         android:text="Arrived"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:id="@+id/textView4"
-        android:layout_below="@+id/editTextDeparture"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_above="@+id/editTextDeparture"
+        android:layout_alignStart="@+id/spinnerForTo" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -75,18 +74,20 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
+        android:background="#494949"
         android:id="@+id/editTextArrived"
         android:layout_below="@+id/textView4"
-        android:layout_alignStart="@+id/editTextDeparture" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView4" />
 
     <TextView
         android:text="Company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="14dp"
         android:id="@+id/textView5"
-        android:layout_below="@+id/editTextArrived"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_below="@+id/editTextDeparture"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -94,41 +95,43 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
+        android:background="#494949"
         android:id="@+id/editTextCompany"
         android:layout_below="@+id/textView5"
-        android:layout_alignStart="@+id/editTextArrived" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextDeparture" />
 
     <TextView
         android:text="Seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
-        android:layout_marginTop="11dp"
-        android:layout_below="@+id/editTextCompany"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_above="@+id/editTextCompany"
+        android:layout_alignStart="@+id/editTextArrived" />
 
-    <Spinner
-        android:layout_width="match_parent"
+    <TextView
+        android:text="Departure"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/spinnerSeat" />
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/spinnerCustomer" />
 
     <Button
         android:text="Buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/buttonBuy"
         android:layout_below="@+id/spinnerSeat"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:id="@+id/buttonBuy" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/textViewResult"
+        android:textColor="#10ff00"
+        android:layout_below="@+id/buttonBuy"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
-        android:id="@+id/textViewResult" />
+        android:layout_marginTop="52dp" />
 </RelativeLayout>
