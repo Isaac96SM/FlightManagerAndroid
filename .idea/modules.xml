@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FlightManager.iml" filepath="$PROJECT_DIR$/FlightManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlightManagerAndroid.iml" filepath="$PROJECT_DIR$/FlightManagerAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
