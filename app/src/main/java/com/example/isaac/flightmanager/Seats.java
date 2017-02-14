@@ -5,7 +5,7 @@ package com.example.isaac.flightmanager;
  */
 
 public class Seats {
-    public Integer Row;
+    public int Row;
     public String Seat;
     public String Full;
 }
