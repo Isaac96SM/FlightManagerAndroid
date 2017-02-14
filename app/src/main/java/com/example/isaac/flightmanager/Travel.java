@@ -5,16 +5,16 @@ package com.example.isaac.flightmanager;
  */
 
 public class Travel {
-    public Integer Code;
+    public int Code;
     public String Origin;
     public String Destination;
-    public java.sql.Timestamp Time_Departure;
-    public java.sql.Timestamp Time_Arrived;
-    public java.sql.Time Duration;
-    public Integer MaxCapacity;
-    public Integer MaxRow;
-    public Integer MaxSeatsRow;
-    public Integer CompanyID;
+    public String Time_Departure;
+    public String Time_Arrived;
+    public String Duration;
+    public int MaxCapacity;
+    public int MaxRow;
+    public int MaxSeatsRow;
+    public int CompanyID;
     public Boolean Status;
     public String CompanyName;
     public String Origin_Destination;

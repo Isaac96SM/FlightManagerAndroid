@@ -5,6 +5,6 @@ package com.example.isaac.flightmanager;
  */
 
 public class Customer {
-    public Integer Code;
+    public int Code;
     public String Name;
 }
